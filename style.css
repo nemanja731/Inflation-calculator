@@ -32,7 +32,7 @@ body {
 }
 
 .container-content {
-    border: 2px solid red;
+    border: 2px solid rgb(166, 161, 161);
     border-radius: 25px;
     flex:1;
     padding-top: 30px;
