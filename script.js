@@ -20,19 +20,16 @@ function inflationCalculator() {
     worth = worth.toFixed(2);
     //display answer
     if (isNaN(money) || isNaN(years) || isNaN(inflationRate)) {
-        newElement.innerText= `Niste adekvatno uneli sva polja.`;
+        newElement.innerText= `You have not filled in all the fields correctly.`;
     }
     else {
         if (years == 1) {
-            var textYear = 'godinu';
-        }
-        else if(years > 1 && years < 5) {
-            var textYear = 'godine'; 
+            var textYear = 'year';
         }
         else {
-            var textYear = 'godina'; 
+            var textYear = 'years'; 
         }
-        newElement.innerText= `Danasnjih ${money}$ ce za ${years} ${textYear}, vredeti ${worth}$.`;
+        newElement.innerText= `Today's ${money}$ will be worth ${worth}$ in ${years} ${textYear}.`;
     }
     document.querySelector('.container-content').appendChild(newElement);
 }
